@@ -36,8 +36,12 @@ This plugin allows you to integrate your Selenium tests in Jenkins with BrowserS
 
 ### For Testing
 
-When building the plugin package for internal testing build the *hpi* package using `mvn clean package`. This will compile the code, run unit tests and build the *hpi* package.
-The Google Analytics tracking id that will be used by default will be the one for testing.
+When building the plugin package for internal testing build the *hpi* package using `mvn clean compile package`. This will compile the code and generate the *hpi* package. Use this *hpi* file to install the plugin in Jenkins.
+
+### Steps to use the *hpi* file as plugin
+* Navigate to **Manage Jenkins** -> **Manage Plugins**
+* Click on **Advanced** and upload the plugin (*hpi* file)
+* Restart Jenkins to apply the changes 
 
 ### For Release
 
